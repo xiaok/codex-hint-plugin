@@ -26,10 +26,14 @@ Next Intent 是一个实验性的 Codex 插件。每轮 AI 回复结束后，它
 ```bash
 xcode-select --install
 ```
+## 让 Agent 帮忙安装
+
+对 codex 说： 
+```bash
+帮我安装这个 codex 插件并配置好 https://github.com/xiaok/codex-hint-plugin
+```
 
 ## 从 Git 仓库安装
-
-仓库发布后，可以直接添加 Git marketplace：
 
 ```bash
 codex plugin marketplace add https://github.com/xiaok/codex-hint-plugin.git
