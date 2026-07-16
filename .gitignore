@@ -1,0 +1,37 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE and local workspace state
+.idea/
+.vscode/
+/.codex/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Native helper build/runtime artifacts
+*.app/
+NextIntentHelper
+native-helper/
+clang-module-cache/
+*.log
+*.pid
+*.lock
+suggestion.json
+latest.txt
+latest-request.txt
+request-*.json
+consumed.txt
+
+# Generated distribution archives
+/dist/
+*.zip

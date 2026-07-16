@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"$PLUGIN_ROOT/hooks/start_helper.py\"",
+            "timeout": 60,
+            "statusMessage": "Starting Tab completion"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"$PLUGIN_DATA/hooks/suggest.py\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

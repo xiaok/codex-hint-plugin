@@ -1,0 +1,30 @@
+{
+  "name": "next-intent",
+  "version": "0.1.0",
+  "description": "Suggest one concise, likely next message after each Codex turn.",
+  "author": {
+    "name": "Yixin"
+  },
+  "homepage": "https://github.com/xiaok/codex-hint-plugin",
+  "repository": "https://github.com/xiaok/codex-hint-plugin",
+  "keywords": [
+    "intent",
+    "suggestion",
+    "productivity"
+  ],
+  "interface": {
+    "displayName": "Next Intent",
+    "shortDescription": "Suggest a concise next reply after each turn.",
+    "longDescription": "Uses a turn-end hook and gpt-5.6-luna to predict one short, natural next message. On macOS Codex desktop, a local accessibility helper displays it near the composer and inserts it when you press Tab.",
+    "developerName": "Yixin",
+    "category": "Productivity",
+    "capabilities": [
+      "Read conversation",
+      "Generate suggestion",
+      "Tab completion"
+    ],
+    "defaultPrompt": [
+      "Explain how Next Intent works."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "next-intent-local",
+  "interface": {
+    "displayName": "Next Intent Local"
+  },
+  "plugins": [
+    {
+      "name": "next-intent",
+      "source": {
+        "source": "local",
+        "path": "./plugins/next-intent"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
